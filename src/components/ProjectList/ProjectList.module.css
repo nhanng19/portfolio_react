@@ -1,0 +1,43 @@
+.projectList {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texts {
+    width: 65%;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.description {
+    margin: 20px 0px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 390px) {
+  .projectList {
+    padding: 10px;
+  }
+
+  .texts {
+    width: 100%;
+  }
+
+  .description {
+    display: none;
+  }
+}
