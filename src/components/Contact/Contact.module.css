@@ -1,0 +1,139 @@
+.contact {
+  height: 100vh;
+  /* position: relative; */
+  overflow: hidden;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  position: relative;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 60px;
+  width: 80%;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.description {
+  font-weight: 200;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+button {
+  float: right;
+}
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: none;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+textarea {
+  width: 100%;
+  background: none;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .contact {
+    flex-direction: column;
+    padding: 0px 50px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .info {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
