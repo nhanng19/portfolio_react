@@ -1,0 +1,37 @@
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo path {
+  stroke-dasharray: 1774;
+  stroke-dashoffset: 1774;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  animation: line-anim 5s ease forwards, fill 0.5s ease forwards 2s;
+}
+
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+
+    z-index: -10;
+  }
+}
