@@ -1,0 +1,51 @@
+.project {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.browser {
+  height: 20px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgb(252, 53, 53) !important;
+}
+
+.circle2 {
+  background-color: rgb(238, 207, 139) !important;
+}
+
+.circle3 {
+  background-color: rgb(81, 231, 81) !important;
+}
+
+.img {
+  width: 100%;
+  transition: all 10s ease;
+}
+
+.project:hover .img {
+  transform: translateY(-100%);
+}
+
+@media screen and (max-width: 390px) {
+  .project {
+    width: 40%;
+    height: 20vh;
+  }
+}
