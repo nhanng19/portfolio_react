@@ -1,0 +1,123 @@
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.right {
+  flex: 1;
+}
+
+.cube {
+  flex: 1;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.sub {
+  margin: 20px 0px;
+}
+
+.description {
+  font-weight: 300;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+
+  border: none;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  transform: translateZ(100px);
+}
+
+.box2 {
+  transform: rotateY(90deg) translateX(100px);
+  transform-origin: right;
+}
+
+.box3 {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.box4 {
+  transform: rotateY(-90deg) translateX(-100px);
+  transform-origin: left;
+}
+
+.box5 {
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top;
+}
+
+.box6 {
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom;
+}
+
+/* Animating the elements */
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotateY(90deg) rotateZ(90deg);
+  }
+  40% {
+    transform: rotateY(180deg) rotateZ(-90deg);
+  }
+  60% {
+    transform: rotateY(270deg) rotateZ(90deg);
+  }
+  80% {
+    transform: rotateY(360deg) rotateZ(-90deg);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    overflow-x: hidden;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    padding: 20px;
+  }
+}
