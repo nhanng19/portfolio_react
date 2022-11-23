@@ -2,8 +2,8 @@ import "./Mouse.css";
 
 const Mouse = () => {
   return (
-    <span class="scroll-btn">
-      <span class="mouse">
+    <span className="scroll-btn">
+      <span className="mouse">
         <span></span>
       </span>
     </span>

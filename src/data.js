@@ -12,19 +12,19 @@ export const projects = [
   },
   {
     id: 2,
-    img: DrawMe,
+    img: Simplify,
     link: "https://draw-me.herokuapp.com/",
     delay: "100",
   },
   {
     id: 3,
-    img: Fooder,
+    img: Simplify,
     link: "https://nhanng19.github.io/Fooder",
     delay: "200",
   },
   {
     id: 4,
-    img: Jingle,
+    img: Simplify,
     link: "https://nhanng19.github.io/music_wordle",
     delay: "0",
   },
