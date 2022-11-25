@@ -19,17 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      * {
-        margin: 0;
-        font-family: "Poppins";
-        color: white;
-      }
-      body {
-        background: linear-gradient(112.1deg, #000000 11.4%, #2d3436 70.2%);
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -45,6 +39,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="modal-hook"></div>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -55,5 +50,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
   </body>
 </html>
