@@ -14,27 +14,27 @@ const About = () => {
       <div data-aos="fade-left" className={styles.left}>
         <div className={styles.cube}>
           <div className={styles.box + " " + styles.box1}>
-            <FontAwesomeIcon icon={faEnvira} color="#DD0031" />
+            <FontAwesomeIcon icon={faEnvira} />
           </div>
 
           <div className={styles.box + " " + styles.box2}>
-            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            <FontAwesomeIcon icon={faHtml5} />
           </div>
 
           <div className={styles.box + " " + styles.box3}>
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            <FontAwesomeIcon icon={faCss3} />
           </div>
 
           <div className={styles.box + " " + styles.box4}>
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            <FontAwesomeIcon icon={faReact} />
           </div>
 
           <div className={styles.box + " " + styles.box5}>
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            <FontAwesomeIcon icon={faJsSquare}/>
           </div>
 
           <div className={styles.box + " " + styles.box6}>
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            <FontAwesomeIcon icon={faGitAlt} />
           </div>
         </div>
       </div>
