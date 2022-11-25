@@ -8,9 +8,34 @@ const Ul = styled.ul`
   align-items: center;
   text-align: center;
   li {
-    padding: 18px 10px;
+    position: relative;
+    padding: 5px 10px;
     cursor: pointer;
   }
+  li:before,
+  li:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 1px;
+    content: "";
+    background: #fff;
+    transition: all 0.3s;
+  }
+  li:before {
+    left: 0px;
+    top: 0px;
+  }
+  li:after {
+    right: 0px;
+    bottom: 0px;
+  }
+  li:hover:before,
+  li:hover:after {
+    opacity: 1;
+    width: 100%;
+  }
+
   @media (max-width: 390px) {
     flex-flow: column nowrap;
     background: linear-gradient(112.1deg, #000000 11.4%, #2d3436 70.2%);
