@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Logo from "../Logo/Logo";
 import Mouse from "../UI/Mouse";
 import { Link } from "react-scroll";
+
 const Landing = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
