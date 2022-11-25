@@ -7,10 +7,10 @@ const ProjectList = () => {
     <div id = "project" className={styles.projectList}>
       <div className={styles.texts}>
         <h1 data-aos="fade-right" className={styles.title}>
-          Check out my latest projects
+          Check out my latest work
         </h1>
         <p data-aos="fade-right" className={styles.description}>
-          Explore my work.
+          Select one of my projects to learn more
         </p>
       </div>
 

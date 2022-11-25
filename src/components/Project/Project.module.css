@@ -43,6 +43,8 @@
   transform: translateY(-100%);
 }
 
+
+
 @media screen and (max-width: 390px) {
   .project {
     width: 40%;
