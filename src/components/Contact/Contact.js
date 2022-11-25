@@ -33,7 +33,7 @@ const Contact = () => {
 
   if (!isLoaded) return <div>Loading</div>;
   return (
-    <div id="contact" className={styles.contact}>
+    <div id="contact" className={styles.contact} >
       <div className={styles.right}>
         <p data-aos="fade-up-right" className={styles.description}>
           <b>Interested in my work?</b> Get in touch and send me a message. Always open to build amazing projects. 
@@ -73,7 +73,7 @@ const Contact = () => {
         className={styles.left}
       >
         <GoogleMap
-          zoom={10}
+          zoom={5}
           center={{ lat: 33.838000707701006, lng: -117.86423156003966 }}
           mapContainerClassName={styles.map}
           options={{
