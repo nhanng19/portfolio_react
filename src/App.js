@@ -4,15 +4,19 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Social from "./components/Social/Social";
 import Navbar from "./components/NavBar/NavBar";
+import Modal from "./components/Modal/Modal";
+
 function App() {
   return (
     <>
-      <Navbar/>
-      <Social/>
+      <Navbar />
+      <Social />
       <Landing />
       <ProjectList />
       <About />
       <Contact />
+
+      {/* <Modal /> */}
     </>
   );
 }
