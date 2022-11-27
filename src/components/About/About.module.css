@@ -26,6 +26,7 @@
 }
 
 .sub {
+    font-style: italic;
   margin: 20px 0px;
 }
 
@@ -39,7 +40,6 @@
   position: absolute;
   transform-style: preserve-3d;
   animation: rotate 30s linear infinite;
-
   border: none;
 }
 
