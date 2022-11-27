@@ -1,0 +1,79 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000;
+  overflow: hidden;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+}
+
+.leftWrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.titleItem {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
