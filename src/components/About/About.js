@@ -41,11 +41,11 @@ const About = () => {
       <div data-aos="fade-right" className={styles.right}>
         <h1 className={styles.title}>About Me</h1>
         <p className={styles.sub}>
-          Hey there, my name is Nhan and I am a Full Stack Developer.
-        </p>
+          "Design is not just what it looks like and feels like. Design is how it works" - Steve Jobs
+         </p>
         <p className={styles.description}>
           I have always had an affinity for technologies and the arts at a young
-          age, a chemistry I gratefully utilize today as a developer. I have a serious passion for creating 
+          age, a chemistry I gratefully utilize today as a developer. I have a serious passion for creating dynamic digital experiences for users, 
         </p>
       </div>
     </div>
