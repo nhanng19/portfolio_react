@@ -4,7 +4,6 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Social from "./components/Social/Social";
 import Navbar from "./components/NavBar/NavBar";
-import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
@@ -15,8 +14,6 @@ function App() {
       <ProjectList />
       <About />
       <Contact />
-
-      {/* <Modal /> */}
     </>
   );
 }
