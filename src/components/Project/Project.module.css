@@ -37,6 +37,7 @@
 .img {
   width: 100%;
   transition: all 10s ease;
+  cursor: pointer;
 }
 
 .project:hover .img {
