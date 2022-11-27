@@ -67,9 +67,8 @@ const Contact = () => {
         </form>
       </div>
       <div
-        data-aos="fade-in"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos="slide-left"
+
         className={styles.left}
       >
         <GoogleMap
@@ -83,6 +82,7 @@ const Contact = () => {
           }}
         >
           <MarkerF
+            
             icon={{
               url: Marker,
               scaledSize: new window.google.maps.Size(30, 50),
