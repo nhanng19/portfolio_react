@@ -3,8 +3,12 @@
   font-family: "Poppins";
   color: white;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
 body {
-  background: linear-gradient(112.1deg, #000000 11.4%, #2d3436 70.2%);
+  background: black;
 }
 .cursor {
   position: fixed;
