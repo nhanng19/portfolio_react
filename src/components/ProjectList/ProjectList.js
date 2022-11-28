@@ -4,7 +4,7 @@ import { projects } from "../../data.js";
 
 const ProjectList = () => {
   return (
-    <div id = "project" className={styles.projectList}>
+    <div id="project" className={styles.projectList}>
       <div className={styles.texts}>
         <h1 data-aos="fade-right" className={styles.title}>
           Check out my latest work
@@ -15,14 +15,18 @@ const ProjectList = () => {
       </div>
 
       <div className={styles.list}>
-        {projects.map((project) => (
-          <Project
-            key={project.id}
-            img={project.img}
-            link={project.link}
-            delay={project.delay}
-          />
-        ))}
+          {projects.map((project) => (
+            <Project
+              key={project.id}
+              img={project.img}
+              link={project.link}
+              delay={project.delay}
+              title={project.title}
+              techno={project.techno}
+              description={project.description}
+              summary = {project.summary}
+            />
+          ))}
       </div>
     </div>
   );

@@ -2,8 +2,33 @@ import ReactDOM from "react-dom";
 import classes from "./ProjectModal.module.css";
 import Card from "./Card";
 import Cancel from "./Cancel";
+import { motion } from "framer-motion";
+import parse from "html-react-parser";
 const Backdrop = (props) => {
-  return <div className={classes.backdrop} onClick={props.onConfirm}></div>;
+    const dropIn = {
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          duration: 0.1
+        }
+      },
+      exit: {
+        opacity: 0,
+      },
+    };
+  return (
+    <motion.div
+      variants={dropIn}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className={classes.backdrop}
+      onClick={props.onConfirm}
+    ></motion.div>
+  );
 };
 
 const ModalOverlay = (props) => {
@@ -11,21 +36,11 @@ const ModalOverlay = (props) => {
     <Card className={classes.modal}>
       <div className={classes.left}>
         <div className={classes.leftWrapper}>
-          <h2 className={classes.intro}>Simplify</h2>
-          <h1 className={classes.name}>HTML / CSS / JavaSript</h1>
-          <div className={classes.titleItem}>Web Developer</div>
+          <h2 className={classes.intro}>{props.description}</h2>
+          <h1 className={classes.name}>{props.title}</h1>
+          <div className={classes.titleItem}>{props.techno}</div>
           <p className={classes.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            posuere orci sit amet felis ultrices facilisis. Mauris a lobortis
-            nunc, ut volutpat arcu. In at blandit nulla. Sed tortor lorem,
-            auctor sit amet ante id, accumsan tempor velit. Praesent non commodo
-            justo. Suspendisse vel ipsum hendrerit, pharetra tellus et, porta
-            eros. Phasellus porta urna nec sem elementum, quis ullamcorper nunc
-            imperdiet. Curabitur auctor purus faucibus eleifend mattis. Ut vitae
-            lectus sed augue mollis posuere et non nisi. Quisque quam quam,
-            vulputate vel nunc id, molestie lobortis erat. Aliquam sodales
-            commodo turpis, ut suscipit nisl tincidunt in. Aenean sit amet leo
-
+           {parse(`${props.summary}`)} 
           </p>
         </div>
       </div>
@@ -37,7 +52,7 @@ const ModalOverlay = (props) => {
     </Card>
   );
 };
-const ErrorModal = (props) => {
+const ProjectModal = (props) => {
   return (
     <>
       {ReactDOM.createPortal(
@@ -47,7 +62,9 @@ const ErrorModal = (props) => {
       {ReactDOM.createPortal(
         <ModalOverlay
           title={props.title}
-          message={props.message}
+          description={props.description}
+          techno={props.techno}
+          summary = {props.summary}
           onConfirm={props.onConfirm}
         />,
         document.getElementById("overlay-root")
@@ -56,4 +73,4 @@ const ErrorModal = (props) => {
   );
 };
 
-export default ErrorModal;
+export default ProjectModal;

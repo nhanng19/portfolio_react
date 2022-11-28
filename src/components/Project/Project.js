@@ -1,13 +1,13 @@
-
 import styles from "./Project.module.css";
 import { useState } from "react";
-import ErrorModal from "../UI/ProjectModal";
-import { projects } from "../../data.js";
-const Project = ({ img, link, delay }) => {
+import ProjectModal from "../UI/ProjectModal";
+import { AnimatePresence } from "framer-motion";
+
+const Project = ({ img, link, delay, title, techno, description, summary }) => {
   const [modal, setModal] = useState(false);
   const modalHandler = () => {
-    setModal(false)
-  }
+    setModal(false);
+  };
   return (
     <>
       <div
@@ -29,7 +29,21 @@ const Project = ({ img, link, delay }) => {
           className={styles.img}
         />
       </div>
-      {modal && <ErrorModal message={link} onConfirm={modalHandler} />}
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter={true}
+        onExitComplete={() => null}
+      >
+        {modal && (
+          <ProjectModal
+            title={title}
+            techno={techno}
+            description={description}
+            summary = {summary}
+            onConfirm={modalHandler}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 };
