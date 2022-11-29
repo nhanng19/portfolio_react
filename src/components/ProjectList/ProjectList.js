@@ -20,6 +20,7 @@ const ProjectList = () => {
               key={project.id}
               img={project.img}
               link={project.link}
+              source={project.source}
               delay={project.delay}
               title={project.title}
               techno={project.techno}
