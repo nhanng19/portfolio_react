@@ -60,16 +60,51 @@
   align-items: center;
 }
 
-
 .actions {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
 }
+.leftWrapper button {
+  align-self: flex-start;
+  width: 120px;
 
-@media (min-width: 768px) {
+  background-color: rgba(0, 0, 0, 0.001);
+  color: white;
+  border: solid 1px;
+}
+
+.img {
+  width: 100%;
+  transition: all 10s ease;
+  cursor: pointer;
+}
+
+.imgContainer {
+  height: 50vh;
+}
+
+@media screen and (max-width: 480px) {
   .modal {
-    left: calc(50% - 20rem);
-    width: 40rem;
+    flex-direction: column;
+  }
+
+  .leftWrapper {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+    .titleItem {
+      font-size: 15px;
+    }
+
+  .description {
+    display: none;
   }
 }
