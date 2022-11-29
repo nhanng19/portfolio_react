@@ -54,6 +54,9 @@
 
 button {
   float: right;
+  background-color: rgba(0, 0, 0, 0.001) !important;
+  color: white !important;
+  border: solid 1px!important;
 }
 input {
   width: 50%;
@@ -118,7 +121,6 @@ button {
     margin: 20px 0px;
     width: 100%;
   }
-
 
   form {
     margin-top: 0px;
