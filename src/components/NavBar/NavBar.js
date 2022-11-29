@@ -8,7 +8,6 @@ const Nav = styled.nav`
   background: #000000;
   border-bottom: 2px solid #f1f1f1;
   display: flex;
-
   justify-content: center;
   position: fixed;
   text-align: center;
@@ -17,7 +16,7 @@ const Nav = styled.nav`
 
 const Navbar = () => {
   return (
-    <Nav data-aos= "fade-down">
+    <Nav data-aos="fade-down">
       <Burger />
     </Nav>
   );
