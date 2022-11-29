@@ -10,7 +10,7 @@ const ProjectList = () => {
           Check out my latest work
         </h1>
         <p data-aos="fade-right" className={styles.description}>
-          Select one of my projects to learn more
+          Select one of my projects to learn more.
         </p>
       </div>
 

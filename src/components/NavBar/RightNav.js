@@ -12,6 +12,9 @@ const Ul = styled.ul`
     padding: 5px 10px;
     cursor: pointer;
   }
+  li a{
+    text-decoration: none;
+  }
   li:before,
   li:after {
     position: absolute;
@@ -77,9 +80,9 @@ const RightNav = ({ open }) => {
         </Link>
       </li>
       <li>
-        <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+        <a href="https://drive.google.com/file/d/1JJQJAzv3tKF7ROPnHAwiXPI3bMV5g-0m/view?usp=sharing" target = "__blank">
           RESUME
-        </Link>
+        </a>
       </li>
     </Ul>
   );

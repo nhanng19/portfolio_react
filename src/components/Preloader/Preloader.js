@@ -70,7 +70,7 @@ const Loading = styled.div`
 `;
 const Follow = styled.div`
   position: absolute;
-  background: linear-gradient(112.1deg, #000000 11.4%, #2d3436 70.2%);
+  background: #808080;
   height: 2px;
   width: 0;
   left: 0;

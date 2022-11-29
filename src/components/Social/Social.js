@@ -42,7 +42,7 @@ const Social = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/nhanngyn/"
+            href="https://gitlab.com/nhanng19"
             aria-label="Github"
             className={styles.link}
             target="_blank"
