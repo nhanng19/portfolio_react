@@ -3,7 +3,7 @@ import { useState } from "react";
 import ProjectModal from "../UI/ProjectModal";
 import { AnimatePresence } from "framer-motion";
 
-const Project = ({ img, link, delay, title, techno, description, summary }) => {
+const Project = ({ img, link, delay, title, techno, description, summary, source }) => {
   const [modal, setModal] = useState(false);
   const modalHandler = () => {
     setModal(false);
@@ -39,7 +39,10 @@ const Project = ({ img, link, delay, title, techno, description, summary }) => {
             title={title}
             techno={techno}
             description={description}
-            summary = {summary}
+            summary={summary}
+            link={link}
+            source={source}
+            img={img}
             onConfirm={modalHandler}
           />
         )}
