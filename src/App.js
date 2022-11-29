@@ -4,25 +4,15 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Social from "./components/Social/Social";
 import Navbar from "./components/NavBar/NavBar";
-import { useState, useEffect } from "react";
-import { gsap, CSSPlugin, Expo } from "gsap";
-import styled from "styled-components";
+import { useState} from "react";
 import Preloader from "./components/Preloader/Preloader";
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4700);
-  }, []);
-
- 
   return (
     <>
       {loading ? (
-        <Preloader />
+        <Preloader setLoading={setLoading} />
       ) : (
         <>
           <Navbar />
