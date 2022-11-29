@@ -10,21 +10,21 @@ const Cancel = (props) => {
       >
         <path
           d="M18 33C26.25 33 33 26.25 33 18C33 9.75 26.25 3 18 3C9.75 3 3 9.75 3 18C3 26.25 9.75 33 18 33Z"
-          stroke="white"
+          stroke="grey"
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M13.7549 22.245L22.2449 13.755"
-          stroke="white"
+          stroke="grey"
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M22.2449 22.245L13.7549 13.755"
-          stroke="white"
+          stroke="grey"
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
