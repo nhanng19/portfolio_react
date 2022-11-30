@@ -61,4 +61,4 @@ This portfolio was uploaded to GitHub at the following repository link:
 [https://github.com/nhanng19/portfolio_react](https://github.com/nhanng19/portfolio_react)
 
 Deployed Link:
-[https://nhanngyn.netlify.app/](https://nhanngyn.netlify.app/)
+[https://www.nhanngyn.tech/](https://www.nhanngyn.tech/)
