@@ -61,7 +61,7 @@ export const projects = [
     img: Portfolio,
     link: "https://nhanng19.github.io/css_portfolio/develop/index",
     source: "https://github.com/nhanng19/css_portfolio",
-    delay: "200",
+    delay: "100",
   },
   {
     id: 6,
@@ -73,6 +73,6 @@ export const projects = [
     img: Notepad,
     link: "https://expressnotepad.herokuapp.com/",
     source: "https://github.com/nhanng19/notepad",
-    delay: "100",
+    delay: "200",
   },
 ];

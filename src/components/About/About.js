@@ -38,6 +38,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      
       <div data-aos="fade-right" className={styles.right}>
         <h1 className={styles.title}>About Me</h1>
         <p className={styles.sub}>
