@@ -24,7 +24,7 @@ export const projects = [
     summary:
       "Draw.me is a community-based drawing platform where users can create an account to draw, post, share, and comment on other user's art. Our server uses mySQL database to store users' confidential credentials, drawings, and comments. Our drawing application is engineered with the Canvas API. Canvas provides a means for drawing graphics via JavaScript and the HTML canvas element. Our Javascript function can render objects such as shapes, lines, and strokes on the Canvas element at any given space coordinates, which in our application's case, the x and y coordinates of our cursor. By using Sequelize ORM, we were able to consistently store data such as drawings and comments by updating queries, so our Express server can respond back to user's requests. Our social network service is entirely built on this stack to retrieve, store, and render data back to our client.",
     img: DrawMe,
-    link: "https://draw-me.herokuapp.com/",
+    link: "https://drawme.herokuapp.com/",
     source: "https://github.com/nhanng19/Draw.me",
     delay: "100",
   },
